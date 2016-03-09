@@ -19,10 +19,4 @@ public class Variable extends Term {
         return var;
     }
 
-    @Override
-    public Variable putTerm(String x, String y) {
-        if (var.equals(x)) {
-            return new Variable(y);
-        } else return this;
-    }
 }

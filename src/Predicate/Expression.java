@@ -43,7 +43,7 @@ public abstract class Expression {
             return !var.equals(((Quantifier) this).var) && getLeft().freeVariable(var);
         }
         if (this instanceof Predicate) {
-            return ((Predicate) this).terms != null && ((Predicate) this).terms.size() > 0;
+            return ((Predicate) this).terms != null && ((Predicate) this).terms.toString().contains(var);
         }
         boolean lAns = left == null || left.freeVariable(var);
         return (lAns && right == null) || (lAns || right!=null&&right.freeVariable(var));

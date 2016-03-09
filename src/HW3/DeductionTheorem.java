@@ -56,7 +56,5 @@ public class DeductionTheorem {
                         "(a)-((a)-(a))-(a)\n" +
                 "((a)-((a)-(a))-(a))-((a)-(a))\n" +
                 "(a)-(a)").replace("a", a);
-
     }
-
 }

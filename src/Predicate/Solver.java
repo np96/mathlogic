@@ -27,5 +27,6 @@ public class Solver {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        System.out.println(ExpressionBuilder.buildExpression("(?x(R(x,a)))-(((Q(b))&(?x(R(x,a))))-(?x((Q(b))&(R(x,a)))))").freeVariable("x"));
     }
 }

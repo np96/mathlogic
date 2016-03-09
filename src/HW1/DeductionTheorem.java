@@ -13,7 +13,6 @@ public class DeductionTheorem {
             Scanner sc = new Scanner(new File(inFile));
             PrintWriter pw = new PrintWriter(new File(outFile));
             String[] input = parser.cond.split(",");
-
             String delim = "";
             for (int i = 0; i < input.length - 1; ++i) {
                 pw.write(delim.concat(input[i]));
@@ -77,5 +76,4 @@ public class DeductionTheorem {
 
 
     }
-
 }

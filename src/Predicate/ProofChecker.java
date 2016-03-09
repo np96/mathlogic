@@ -65,14 +65,14 @@ public class ProofChecker {
                 if (!checkStatement(expr, i)) {
                     wr.write("Вывод некорректен начиная с формулы номер " + i);
                     if (checkAll && expr.getRight() instanceof Any) {
-                        wr.write((": переменная " + ((Any) expr.getRight()).var + " входит свободно в формулу " + expr.getLeft()).replace("-","->"));
+                        wr.write((": переменная " + ((Any) expr.getRight()).var + " входит свободно в формулу " + expr.getLeft()).replace("-", "->"));
                         return;
                     }
                     if (checkExists && expr.getLeft() instanceof Exists) {
-                        wr.write((": переменная " + ((Exists) expr.getLeft()).var + " входит свободно в формулу " + expr.getRight()).replace("-","->"));
+                        wr.write((": переменная " + ((Exists) expr.getLeft()).var + " входит свободно в формулу " + expr.getRight()).replace("-", "->"));
                         return;
                     }
-                    wr.write(checkError(expr).replace("-","->"));
+                    wr.write(checkError(expr).replace("-", "->"));
                     return;
                 }
                 if (i % 1000 == 0) {
@@ -85,14 +85,14 @@ public class ProofChecker {
                 for (String var : axVariables.keySet()) {
                     if (alpha.freeVariable(var) && Arrays.asList(alpha.toString().split("\\W")).contains(var)) {
                         wr.write(("Вывод некорректен начиная с формулы номер " + axVariables.get(var) + ": используется схема аксиом" +
-                                " с квантором по переменной " + var + ", входящей свободно в допущение " + alpha).replace("-","->"));
+                                " с квантором по переменной " + var + ", входящей свободно в допущение " + alpha).replace("-", "->"));
                         return;
                     }
                 }
                 for (String var : rulesVariable.keySet()) {
                     if (alpha.freeVariable(var) && Arrays.asList(alpha.toString().split("\\W")).contains(var)) {
                         wr.write(("Вывод некорректен начиная с формулы номер " + rulesVariable.get(var) + ": используется правило" +
-                                " с квантором по переменной " + var + ", входящей свободно в допущение " + alpha).replace("-","->"));
+                                " с квантором по переменной " + var + ", входящей свободно в допущение " + alpha).replace("-", "->"));
                         return;
                     }
                 }
@@ -139,6 +139,7 @@ public class ProofChecker {
     }
 
     private boolean checkStatement(Expression e, int num) {
+        System.out.println(e.toString());
 
         if (specialRulesCheck(e, num)) {
             answers.add("ax");
@@ -168,8 +169,8 @@ public class ProofChecker {
             if (statements.get(i) instanceof Implication) {
                 if (e instanceof Implication) {
                     if (e.getLeft() instanceof Exists) {
-                        boolean check = new TreeTraveler().traverseExpressionTree(e.getLeft().getLeft(),statements.get(i).getLeft()
-                                ,((Exists)e.getLeft()).var,null)
+                        boolean check = new TreeTraveler().traverseExpressionTree(e.getLeft().getLeft(), statements.get(i).getLeft()
+                                , ((Exists) e.getLeft()).var, null)
                                 && e.getRight().equals(statements.get(i).getRight());
                         if (check) {
                             checkExists = true;
@@ -183,8 +184,6 @@ public class ProofChecker {
                         }
                     }
                     if (e.getRight() instanceof Any) {
-                        /*boolean check = e.getRight().getLeft().equals(statements.get(i).getRight())
-                                && e.getLeft().equals(statements.get(i).getLeft());*/
                         boolean check = new TreeTraveler().traverseExpressionTree(e.getRight().getLeft(), statements.get(i).getRight()
                                 , ((Any) e.getRight()).var, null)
                                 && e.getLeft().equals(statements.get(i).getLeft());
@@ -219,8 +218,8 @@ public class ProofChecker {
                     &&
                     e.getLeft().getRight() instanceof Any
                     && e.getLeft().getRight().getLeft().getLeft() != null
-                    && new TreeTraveler().traverseExpressionTree(e.getLeft().getRight().getLeft().getLeft(),e.getRight(),
-                    ((Quantifier)e.getLeft().getRight()).var,null)) {
+                    && new TreeTraveler().traverseExpressionTree(e.getLeft().getRight().getLeft().getLeft(), e.getRight(),
+                    ((Quantifier) e.getLeft().getRight()).var, null)) {
                 Expression expr = ExpressionBuilder.buildExpression(e.getLeft().getRight().getLeft().getLeft().toString());
                 if (new TreeTraveler().traverseExpressionTree(
                         expr,

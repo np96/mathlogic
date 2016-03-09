@@ -109,8 +109,5 @@ public class Expression {
             return !(this.getLeft().eval(variables)) | this.getRight().eval(variables);
         }
         return type == '!' & !this.getLeft().eval(variables);
-
     }
-
-
 }

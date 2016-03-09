@@ -14,19 +14,13 @@ public class Term {
         subterms = new ArrayList<>();
     }
 
-    public Term putTerm(String x, String y) {
-        ArrayList<Term> replaced = new ArrayList<>();
-        for (Term subterm : subterms) {
-            replaced.add(subterm.putTerm(x, y));
-        }
-        return new Term(this.name, replaced);
-    }
-
 
     public Term(String t, ArrayList<Term> terms) {
         name = t;
         subterms = terms;
     }
+
+
 
 
     protected Term() {

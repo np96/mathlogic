@@ -12,7 +12,7 @@ public class ExpressionBuilder {
         if (type == ops.NEG) {
             return un(s);
         }
-        int i = type ==ops.IMPL?0:s.length()-1;
+        int i = type == ops.IMPL ? 0 : s.length() - 1;
         int brCount = 0;
         while (i < s.length() && i >= 0) {
             if (s.charAt(i) == '(') {
@@ -28,14 +28,14 @@ public class ExpressionBuilder {
                 }
                 return build(type, bin(s.substring(0, i), type), bin(s.substring(i + 1), type.next()));
             }
-            i=type==ops.IMPL?i+1:i-1;
+            i = type == ops.IMPL ? i + 1 : i - 1;
         }
 
         return bin(s, type.next());
     }
 
     private static Expression un(String s) {
-        if (s.charAt(0) == '(' && s.charAt(s.length() - 1) == ')' && bracketsCheck(s.substring(1,s.length()-1))) {
+        if (s.charAt(0) == '(' && s.charAt(s.length() - 1) == ')' && bracketsCheck(s.substring(1, s.length() - 1))) {
             return bin(s.substring(1, s.length() - 1), ops.IMPL);
         }
         if (s.charAt(0) == '!') {
@@ -43,7 +43,7 @@ public class ExpressionBuilder {
         }
         if (s.charAt(0) == '@' || s.charAt(0) == '?') {
             String var = s.substring(1).split("[^a-z\\d]")[0];
-            if (var.length() > 1 && var.charAt(1) <='z' && var.charAt(1) >='a') var = var.substring(0,1);
+            if (var.length() > 1 && var.charAt(1) <= 'z' && var.charAt(1) >= 'a') var = var.substring(0, 1);
             return build(ops.fromChar(s.charAt(0)), bin(s.substring(1 + var.length()), ops.IMPL), null, var);
         }
         String pred;
@@ -92,6 +92,7 @@ public class ExpressionBuilder {
                 return null;
         }
     }
+
     public static boolean bracketsCheck(String s) {
         int brc = 0;
         for (int i = 0; i < s.length(); ++i) {
