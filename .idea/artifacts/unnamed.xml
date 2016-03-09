@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/HW3</output-path>
+    <root id="archive" name="unnamed.jar">
+      <element id="module-output" name="First_task" />
+    </root>
+  </artifact>
+</component>
