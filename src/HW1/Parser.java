@@ -112,7 +112,7 @@ public class Parser {
         for (int i = statements.size() - 1; i >= 0; --i) {
 
             if (statements.get(i).getRight() != null && checkStatementEquality(e, statements.get(i).getRight()) && statements.get(i).getType() == '-') {
-                for (int j = statements.size() - 1; j >= 0; ++j) {
+                for (int j = statements.size() - 1; j >= 0; --j) {
                     if (checkStatementEquality(statements.get(i).getLeft(), statements.get(j))) {
                         statements.add(e);
                         return "M.P. " + (j + 1) + ", " + (i + 1);
