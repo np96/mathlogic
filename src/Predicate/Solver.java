@@ -11,7 +11,7 @@ public class Solver {
 
     public static void main(String args[])  {
         if (args.length != 4)
-            for (int i = 1; i <= 10; ++i) {
+            for (int i = 1; i <= 12; ++i) {
                 try {
                     new ProofChecker(new ArrayList<>(Arrays.asList("Axioms.in", "Arithm.in")), "tests/HW4/incorrect" + i + ".in", "output").checkProof();
                     try (Scanner sc = new Scanner(new File("output"))) {
@@ -26,7 +26,5 @@ public class Solver {
             new ProofChecker(new ArrayList<>(Arrays.asList(args[0], args[1])), args[2], args[3]).checkProof();
         } catch (IOException e) {
             e.printStackTrace();
-        }
-        System.out.println(ExpressionBuilder.buildExpression("(?x(R(x,a)))-(((Q(b))&(?x(R(x,a))))-(?x((Q(b))&(R(x,a)))))").freeVariable("x"));
-    }
+        }}
 }

@@ -139,14 +139,13 @@ public class ProofChecker {
     }
 
     private boolean checkStatement(Expression e, int num) {
-        System.out.println(e.toString());
 
         if (specialRulesCheck(e, num)) {
             answers.add("ax");
             statements.add(e);
             return true;
         }
-        for (int i = 0; i < axiomsSize; ++i) {
+        for (int i = 0; i < 13; ++i) {
             axMap = new HashMap<>();
             termMap = new HashMap<>();
             if (axiomCheck(e, axioms.get(i))) {
@@ -155,7 +154,7 @@ public class ProofChecker {
                 return true;
             }
         }
-        for (int i = axiomsSize; i < axioms.size(); ++i) {
+        for (int i = 13; i < axioms.size(); ++i) {
             if (e.equals(axioms.get(i))) {
                 answers.add("ax");
                 statements.add(e);
