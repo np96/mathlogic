@@ -32,7 +32,6 @@ public class ProofChecker {
             this.fname = inputFile;
             this.outFname = outputFile;
             fl = sc.nextLine();
-
             if (fl.contains("|-")) {
                 String s = fl.split("\\|-")[0];
                 int brc = 0;
@@ -299,7 +298,6 @@ public class ProofChecker {
         axioms = new ArrayList<>();
         for (String Axioms : AxiomsPath) {
             try (Scanner sc = new Scanner(new File(Axioms))) {
-
                 while (sc.hasNextLine()) {
                     axioms.add(ExpressionBuilder.buildExpression(sc.nextLine()));
                 }
