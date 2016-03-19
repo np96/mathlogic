@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class Solver {
 
     public static void main(String args[])  {
+        System.out.println(ExpressionBuilder.buildExpression("0=0=0").toString());
         if (args.length != 4)
             for (int i = 1; i <= 12; ++i) {
                 try {
@@ -19,7 +20,6 @@ public class Solver {
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
-                    continue;
                 }
             }
         else try {

@@ -70,12 +70,7 @@ public class Sum {
                     "(0=0->0=0->0=0)->(a=b->a'=b')\n" +
                     "(0=0->0=0->0=0)->@b(a=b->a'=b')\n" +
                     "(0=0->0=0->0=0)->@a(@b(a=b->a'=b'))\n" +
-                    "@a(@b(a=b->a'=b'))\n" +
-                    "(a=b->a'=b')->0=0=0->(a=b->a'=b')\n" +
-                    "0=0=0->(a=b->a'=b')\n" +
-                    "0=0=0->@b(a=b->a'=b')\n" +
-                    "0=0=0->@a@b(a=b->a'=b')\n" +
-                    "@a@b(a=b->a'=b')\n";
+                    "@a(@b(a=b->a'=b'))\n";
 
     private final static String lemma2 =
             "@a(a+0)=a->(s)+0=(s)\n" +
@@ -152,9 +147,7 @@ public class Sum {
             count--;
         }
         try (PrintWriter pw = new PrintWriter(new File(args[1]))) {
-            for (String subproof : proof) {
-                pw.write(subproof);
-            }
+            proof.forEach(pw::write);
 
         } catch (IOException e) {
             e.printStackTrace();

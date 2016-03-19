@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="1652ef3f-91f5-48ee-8d1c-b6f28005115d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/HW3/unnamed.jar" afterPath="$PROJECT_DIR$/out/artifacts/HW3/unnamed.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First_task/Predicate/ProofChecker.class" afterPath="$PROJECT_DIR$/out/production/First_task/Predicate/ProofChecker.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First_task/Predicate/Solver.class" afterPath="$PROJECT_DIR$/out/production/First_task/Predicate/Solver.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First_task/Sum/Sum.class" afterPath="$PROJECT_DIR$/out/production/First_task/Sum/Sum.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/input" afterPath="$PROJECT_DIR$/input" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/First_task/sumres" afterPath="$PROJECT_DIR$/out/production/First_task/sumres" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/output.out" afterPath="$PROJECT_DIR$/output.out" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Predicate/ProofChecker.java" afterPath="$PROJECT_DIR$/src/Predicate/ProofChecker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Predicate/Solver.java" afterPath="$PROJECT_DIR$/src/Predicate/Solver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Sum/Sum.java" afterPath="$PROJECT_DIR$/src/Sum/Sum.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sumres" afterPath="$PROJECT_DIR$/src/sumres" />
     </list>
@@ -33,11 +32,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Sum.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Sum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Sum/Sum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.061349694">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Predicate.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Predicate/Predicate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -47,37 +58,17 @@
         <entry file="file://$PROJECT_DIR$/src/sumres">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+              <caret line="1235" column="19" selection-start-line="1235" selection-start-column="19" selection-end-line="1235" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="First_task.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/First_task.iml">
+      <file leaf-file-name="Solver.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Predicate/Solver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Arithm.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Arithm.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="output.out" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/output.out">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.42944786">
+              <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -87,27 +78,27 @@
         <entry file="file://$PROJECT_DIR$/src/output">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="1239" column="0" selection-start-line="1239" selection-start-column="0" selection-end-line="1239" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="output.out" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/output.out">
+      <file leaf-file-name="Term.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Predicate/Term.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3914" column="0" selection-start-line="3914" selection-start-column="0" selection-end-line="3914" selection-end-column="0" />
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="input" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/input">
+      <file leaf-file-name="TreeTraveler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Predicate/TreeTraveler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -117,7 +108,27 @@
         <entry file="file://$PROJECT_DIR$/src/Predicate/ProofChecker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+              <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Expression.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Predicate/Expression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="105" selection-start-line="45" selection-start-column="105" selection-end-line="45" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Variable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Predicate/Variable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -148,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/tests/HW4/incorrect5.in" />
         <option value="$PROJECT_DIR$/src/Predicate/ErrorAnsw.java" />
         <option value="$PROJECT_DIR$/src/Predicate/Mul.java" />
-        <option value="$PROJECT_DIR$/src/Predicate/TermBuilder.java" />
         <option value="$PROJECT_DIR$/src/tests/HW4/incorrect8.in" />
         <option value="$PROJECT_DIR$/src/Predicate/Conjuction.java" />
         <option value="$PROJECT_DIR$/src/Predicate/Disjunction.java" />
@@ -186,14 +196,15 @@
         <option value="$PROJECT_DIR$/src/Predicate/Variable.java" />
         <option value="$PROJECT_DIR$/src/Axioms.in" />
         <option value="$PROJECT_DIR$/src/Arithm.in" />
-        <option value="$PROJECT_DIR$/src/Predicate/Solver.java" />
-        <option value="$PROJECT_DIR$/src/Predicate/ProofChecker.java" />
         <option value="$PROJECT_DIR$/output.out" />
-        <option value="$PROJECT_DIR$/src/sumres" />
         <option value="$PROJECT_DIR$/src/output" />
-        <option value="$PROJECT_DIR$/input" />
         <option value="$PROJECT_DIR$/src/Sum/Sum2.java" />
+        <option value="$PROJECT_DIR$/src/Predicate/TermBuilder.java" />
+        <option value="$PROJECT_DIR$/input" />
+        <option value="$PROJECT_DIR$/src/sumres" />
         <option value="$PROJECT_DIR$/src/Sum/Sum.java" />
+        <option value="$PROJECT_DIR$/src/Predicate/ProofChecker.java" />
+        <option value="$PROJECT_DIR$/src/Predicate/Solver.java" />
       </list>
     </option>
   </component>
@@ -384,9 +395,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,7 +449,7 @@
       <recent name="$PROJECT_DIR$/rules" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sum">
+  <component name="RunManager" selected="Application.Predicate">
     <configuration default="false" name="unnamed.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/HW3/HW3.jar" />
@@ -860,7 +871,13 @@
       <option name="project" value="LOCAL" />
       <updated>1457719263730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="i hope last fixes">
+      <created>1458166935110</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1458166935110</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -933,7 +950,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fixes&#10;" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="i hope last fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="i hope last fixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -949,13 +967,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/tests/HW1/good1.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tests/HW1/good3.in">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1089,20 +1100,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Predicate/Variable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Predicate/TreeTraveler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Predicate/ExpressionBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1114,13 +1111,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Predicate/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="105" selection-start-line="45" selection-start-column="105" selection-end-line="45" selection-end-column="105" />
         </state>
       </provider>
     </entry>
@@ -1152,20 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Predicate/Term.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Predicate/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/HW1/ops.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1191,20 +1167,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Predicate/Solver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Predicate/Quantifier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -1236,18 +1198,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_31.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/First_task.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Arithm.in">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Predicate/ProofChecker.java">
+    <entry file="file://$PROJECT_DIR$/output.out">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="295" column="0" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+          <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Predicate/TermBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1260,34 +1252,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/output.out">
+    <entry file="file://$PROJECT_DIR$/src/Predicate/Quantifier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="9" selection-start-line="92" selection-start-column="9" selection-end-line="92" selection-end-column="9" />
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/output">
+    <entry file="file://$PROJECT_DIR$/src/Predicate/Term.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/First_task.iml">
+    <entry file="file://$PROJECT_DIR$/src/Predicate/TreeTraveler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input">
+    <entry file="file://$PROJECT_DIR$/src/Predicate/Variable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Predicate/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="105" selection-start-line="45" selection-start-column="105" selection-end-line="45" selection-end-column="105" />
           <folding />
         </state>
       </provider>
@@ -1295,15 +1295,49 @@
     <entry file="file://$PROJECT_DIR$/src/sumres">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
+          <caret line="1235" column="19" selection-start-line="1235" selection-start-column="19" selection-end-line="1235" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/output">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1239" column="0" selection-start-line="1239" selection-start-column="0" selection-end-line="1239" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Sum/Sum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.061349694">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="43" selection-start-line="72" selection-start-column="43" selection-end-line="72" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Predicate/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Predicate/ProofChecker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="27" selection-start-line="74" selection-start-column="27" selection-end-line="74" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Predicate/Solver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42944786">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
           <folding />
         </state>
       </provider>
